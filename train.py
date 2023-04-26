@@ -256,7 +256,7 @@ def main():
     parser.add_argument('--emb_size', type=int, default=512, help='EMBEDDING_SIZE')
     parser.add_argument('--num_heads', type=int, default=8, help='ATTENTION_HEADS')
     parser.add_argument('--dropout', type=float, default=0.1, help='DROPOUT')
-    parser.add_argument('--epoch', type=int, default=5, help='EPOCH')
+    parser.add_argument('--epoch', type=int, default=20, help='EPOCH')
     parser.add_argument('--n_layers', type=int, default=3, help='NEURAL_NET_LAYERS')
     args = parser.parse_args()
 
