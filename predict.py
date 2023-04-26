@@ -32,14 +32,13 @@ def translate(model_path, args):
             device=DEVICE)
     model.load_state_dict(checkpoint['model'])
     print('[Info] Trained model state loaded.')
-    print("")
-    print("German input: ", "[", len(args.inp), "]", ' '.join(args.inp))
+    print("German input: ", "[", len(args.inp), "]", args.inp)
     src_seq = [src_stoi.get(word, unk_idx) for word in args.inp]
     pred_seq = model.translate_sentence(torch.LongTensor([src_seq]).to(DEVICE))
     pred_line = ' '.join(trg_itos[idx] for idx in pred_seq)
     pred_line = pred_line.replace(BOS_WORD, '').replace(EOS_WORD, '')
-    print("English pred: ", "[", len(pred_seq), "]", pred_seq)
-    print("English pred: ", "[", len(pred_seq), "]", pred_line)
+    # print("English output: ", "[", len(pred_seq), "]", pred_seq)
+    print("English output: ", "[", len(pred_seq), "]", pred_line)
 
 def main():
     parser = argparse.ArgumentParser(description='Machine Translation')

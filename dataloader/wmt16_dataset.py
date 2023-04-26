@@ -25,9 +25,9 @@ def prepare_dataloaders(max_len, min_freq, batch_size, device):
     
     
     # show datasets results after tokenlizer
-    print("train_datasets len: ", len(train_datasets))
-    print("valid_datasets len: ", len(valid_datasets))
-    print("test_datasets len: ", len(test_datasets))
+    # print("train_datasets len: ", len(train_datasets))
+    # print("valid_datasets len: ", len(valid_datasets))
+    # print("test_datasets len: ", len(test_datasets))
     # for i in range(10):
     #     print(f"++++++++++++++++++++++++++++ train example {i} ++++++++++++++++++++++++++++++++++++")
     #     print("[", len(train_datasets[i][0]), "]", train_datasets[i][0])
@@ -45,7 +45,7 @@ def prepare_dataloaders(max_len, min_freq, batch_size, device):
     src_vocab.set_default_index(0)
     trg_vocab.set_default_index(0)
 
-    print('[Info] Get source language vocabulary size:', len(src_vocab.vocab))
+    # print('[Info] Get source language vocabulary size:', len(src_vocab.vocab))
     # print("src_vocab vars: ")
     # print(vars(src_vocab).keys())
     # print("src_vocab.vocab.itos[:20]: ")
@@ -53,7 +53,7 @@ def prepare_dataloaders(max_len, min_freq, batch_size, device):
     # print("src_vocab.vocab.stoi[:20]: ")
     # print(list(src_vocab.vocab.get_stoi().items())[:20])
     
-    print('[Info] Get target language vocabulary size:', len(trg_vocab.vocab))
+    # print('[Info] Get target language vocabulary size:', len(trg_vocab.vocab))
     # print("trg_vocab.vocab vars: ")
     # print(vars(trg_vocab).keys())
     # print("trg_vocab.vocab.itos[:20]: ")
@@ -62,7 +62,7 @@ def prepare_dataloaders(max_len, min_freq, batch_size, device):
     # print(list(trg_vocab.vocab.get_stoi().items())[:20])
     
     # merge two vocabularies
-    print('[Info] Merging two vocabulary ...')
+    # print('[Info] Merging two vocabulary ...')
     src_vocab_stoi = src_vocab.get_stoi()
     trg_vocab_stoi = trg_vocab.get_stoi()
     trg_vocab_itos = trg_vocab.get_itos()
@@ -75,7 +75,7 @@ def prepare_dataloaders(max_len, min_freq, batch_size, device):
         trg_vocab_itos[i] = w
     src_vocab_stoi = trg_vocab_stoi
     src_vocab_itos = trg_vocab_itos
-    print('[Info] Get merged vocabulary size:', len(src_vocab_stoi))
+    # print('[Info] Get merged vocabulary size:', len(src_vocab_stoi))
     
     # convert datasets samples from strings to ints by vocabularies
     # if x is not in src_vocab_stoi, set it to default_value
