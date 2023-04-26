@@ -31,6 +31,7 @@ def translate(model_path, args):
             alpha=0.7,
             device=DEVICE)
     model.load_state_dict(checkpoint['model'])
+    model.eval()
     print('[Info] Trained model state loaded.')
     print("German input: ", "[", len(args.inp), "]", args.inp)
     src_seq = [src_stoi.get(word, unk_idx) for word in args.inp]
