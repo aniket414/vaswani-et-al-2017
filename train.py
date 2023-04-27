@@ -9,6 +9,7 @@ from torchtext.data import bleu_score
 from tqdm import tqdm
 from torch.utils.tensorboard import SummaryWriter
 import torch.nn.functional as F
+import torch.nn as nn
 from transformer.transformer import Transformer
 from transformer.optim import ScheduledOptim
 from dataloader.wmt16_dataset import prepare_dataloaders, tokenize_en
@@ -67,6 +68,7 @@ class TrainerTransformer:
             beam_size=self.beam_size,
             alpha=self.alpha,
             device=self.device)
+        self.model = nn.DataParallel(self.model) # for using multiple gpus
         self.model.to(self.device)
 
         # create optimizer
