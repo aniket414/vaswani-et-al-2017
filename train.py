@@ -76,7 +76,9 @@ class TrainerTransformer:
 
     def train(self):
         valid_losses = []
-        for epoch_i in range(self.epoch):
+        epoch_load = tqdm(range(self.epoch), desc="Epochs", leave=False)
+        count = 1
+        for epoch_i in epoch_load:
 
             # train epoch
             print('[ Epoch', epoch_i, ']')
@@ -102,6 +104,9 @@ class TrainerTransformer:
             self.tb_writer.add_scalars('ppl', {'train': train_ppl, 'val': valid_ppl}, epoch_i)
             self.tb_writer.add_scalars('accuracy', {'train': train_accu * 100, 'val': valid_accu * 100}, epoch_i)
             self.tb_writer.add_scalar('learning_rate', lr, epoch_i)
+
+            epoch_load.set_postfix(count=count)
+            count += 1
 
     def train_epoch(self):
         self.model.train()
@@ -212,8 +217,9 @@ class TrainerTransformer:
         checkpoint = torch.load(model_path, map_location=self.device)
         self.model.load_state_dict(checkpoint['model'], strict=False)
         print('[Info] Trained model state loaded.')
-
-        for src, trg in tqdm(self.test_dataset, mininterval=2, desc='  - (Test)', leave=False):
+        test_load = tqdm(self.test_dataset, mininterval=2, desc='  - (Test)', leave=False)
+        count = 0
+        for src, trg in test_load:
             print("")
             print("English input: ", "[", len(src), "]", ' '.join(src))
             print("German output: ", "[", len(trg), "]", ' '.join(trg))
@@ -223,6 +229,9 @@ class TrainerTransformer:
             pred_line = pred_line.replace(self.BOS_WORD, '').replace(self.EOS_WORD, '')
             print("German output: ", "[", len(pred_seq), "]", pred_seq)
             print("German output: ", "[", len(pred_seq), "]", pred_line)
+
+            test_load.set_postfix(count=count)
+            count += 1
 
         print('[Info] Finished.')
 
