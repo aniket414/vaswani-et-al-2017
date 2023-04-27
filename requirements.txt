@@ -1,0 +1,8 @@
+dill==0.3.6
+spacy==3.5.2
+tensorboard==2.12.2
+torch==2.0.0
+torchdata==0.6.0
+torchtext==0.15.1
+tqdm==4.65.0
+portalocker==2.7.0
