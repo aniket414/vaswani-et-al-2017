@@ -44,6 +44,13 @@
   python predict.py --inp "a girl on a seashore."
   ```
   
+## Result
+- The model was trained on 4 `NVIDIA A100-SXM-80GB` GPUs with each GPU of 4 cores/gpu and 8 GB/core specifications.
+
+  | Task              | BLEU Score |
+  | ----------------- | ---------- |
+  | English to German | 29.1       |
+
 ## Structure
 ```
 .wmt16_data/ - [Dataset]
