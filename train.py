@@ -214,7 +214,6 @@ class TrainerTransformer:
         print('[Info] Trained model state loaded.')
 
         for src, trg in tqdm(self.test_dataset, mininterval=2, desc='  - (Test)', leave=False):
-            print(src)
             print("")
             print("English input: ", "[", len(src), "]", ' '.join(src))
             print("German output: ", "[", len(trg), "]", ' '.join(trg))
