@@ -1,0 +1,518 @@
+[ Epoch 0 ]
+train epoch is processing: 
+  - (Training)   ppl:  3247.84962, accuracy: 5.775 %, lr:  0.00002, elapse: 0.328 min
+val epoch is processing: 
+  - (Validation) ppl:  914.43286, accuracy: 11.830 %, lr:  0.00002, elapse: 0.003 min
+- [Info] The checkpoint file has been updated.
+[ Epoch 1 ]
+train epoch is processing: 
+  - (Training)   ppl:  424.27981, accuracy: 20.576 %, lr:  0.00004, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  126.98060, accuracy: 29.232 %, lr:  0.00004, elapse: 0.003 min
+- [Info] The checkpoint file has been updated.
+[ Epoch 2 ]
+train epoch is processing: 
+  - (Training)   ppl:  160.39736, accuracy: 33.441 %, lr:  0.00006, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  58.98693, accuracy: 36.504 %, lr:  0.00006, elapse: 0.003 min
+- [Info] The checkpoint file has been updated.
+[ Epoch 3 ]
+train epoch is processing: 
+  - (Training)   ppl:  97.10821, accuracy: 38.418 %, lr:  0.00008, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  36.30548, accuracy: 41.826 %, lr:  0.00008, elapse: 0.003 min
+- [Info] The checkpoint file has been updated.
+[ Epoch 4 ]
+train epoch is processing: 
+  - (Training)   ppl:  65.33167, accuracy: 43.887 %, lr:  0.00010, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  23.24887, accuracy: 47.564 %, lr:  0.00010, elapse: 0.003 min
+- [Info] The checkpoint file has been updated.
+[ Epoch 5 ]
+train epoch is processing: 
+  - (Training)   ppl:  46.19945, accuracy: 48.934 %, lr:  0.00012, elapse: 0.261 min
+val epoch is processing: 
+  - (Validation) ppl:  16.27365, accuracy: 51.743 %, lr:  0.00012, elapse: 0.003 min
+- [Info] The checkpoint file has been updated.
+[ Epoch 6 ]
+train epoch is processing: 
+  - (Training)   ppl:  34.18869, accuracy: 53.437 %, lr:  0.00014, elapse: 0.266 min
+val epoch is processing: 
+  - (Validation) ppl:  12.07137, accuracy: 55.510 %, lr:  0.00014, elapse: 0.003 min
+- [Info] The checkpoint file has been updated.
+[ Epoch 7 ]
+train epoch is processing: 
+  - (Training)   ppl:  26.45829, accuracy: 57.484 %, lr:  0.00016, elapse: 0.260 min
+val epoch is processing: 
+  - (Validation) ppl:  9.22934, accuracy: 58.970 %, lr:  0.00016, elapse: 0.003 min
+- [Info] The checkpoint file has been updated.
+[ Epoch 8 ]
+train epoch is processing: 
+  - (Training)   ppl:  21.25894, accuracy: 60.875 %, lr:  0.00018, elapse: 0.263 min
+val epoch is processing: 
+  - (Validation) ppl:  6.48716, accuracy: 64.973 %, lr:  0.00018, elapse: 0.003 min
+- [Info] The checkpoint file has been updated.
+[ Epoch 9 ]
+train epoch is processing: 
+  - (Training)   ppl:  17.64379, accuracy: 63.899 %, lr:  0.00020, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  6.27284, accuracy: 64.675 %, lr:  0.00020, elapse: 0.003 min
+- [Info] The checkpoint file has been updated.
+[ Epoch 10 ]
+train epoch is processing: 
+  - (Training)   ppl:  15.05847, accuracy: 66.476 %, lr:  0.00022, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  5.85471, accuracy: 65.750 %, lr:  0.00022, elapse: 0.003 min
+- [Info] The checkpoint file has been updated.
+[ Epoch 11 ]
+train epoch is processing: 
+  - (Training)   ppl:  13.20348, accuracy: 68.640 %, lr:  0.00024, elapse: 0.260 min
+val epoch is processing: 
+  - (Validation) ppl:  5.69846, accuracy: 65.301 %, lr:  0.00024, elapse: 0.003 min
+- [Info] The checkpoint file has been updated.
+[ Epoch 12 ]
+train epoch is processing: 
+  - (Training)   ppl:  11.93252, accuracy: 70.385 %, lr:  0.00026, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  5.05876, accuracy: 66.975 %, lr:  0.00026, elapse: 0.003 min
+- [Info] The checkpoint file has been updated.
+[ Epoch 13 ]
+train epoch is processing: 
+  - (Training)   ppl:  10.77848, accuracy: 72.221 %, lr:  0.00028, elapse: 0.260 min
+val epoch is processing: 
+  - (Validation) ppl:  4.89616, accuracy: 67.317 %, lr:  0.00028, elapse: 0.003 min
+- [Info] The checkpoint file has been updated.
+[ Epoch 14 ]
+train epoch is processing: 
+  - (Training)   ppl:  9.97463, accuracy: 73.548 %, lr:  0.00030, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  4.45275, accuracy: 68.876 %, lr:  0.00030, elapse: 0.003 min
+- [Info] The checkpoint file has been updated.
+[ Epoch 15 ]
+train epoch is processing: 
+  - (Training)   ppl:  9.30406, accuracy: 74.851 %, lr:  0.00032, elapse: 0.260 min
+val epoch is processing: 
+  - (Validation) ppl:  4.79384, accuracy: 66.894 %, lr:  0.00032, elapse: 0.003 min
+[ Epoch 16 ]
+train epoch is processing: 
+  - (Training)   ppl:  8.76070, accuracy: 76.035 %, lr:  0.00034, elapse: 0.260 min
+val epoch is processing: 
+  - (Validation) ppl:  3.74837, accuracy: 72.434 %, lr:  0.00034, elapse: 0.003 min
+- [Info] The checkpoint file has been updated.
+[ Epoch 17 ]
+train epoch is processing: 
+  - (Training)   ppl:  8.31231, accuracy: 77.215 %, lr:  0.00035, elapse: 0.262 min
+val epoch is processing: 
+  - (Validation) ppl:  4.51866, accuracy: 69.326 %, lr:  0.00035, elapse: 0.003 min
+[ Epoch 18 ]
+train epoch is processing: 
+  - (Training)   ppl:  7.85044, accuracy: 78.441 %, lr:  0.00034, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  4.44630, accuracy: 69.130 %, lr:  0.00034, elapse: 0.003 min
+[ Epoch 19 ]
+train epoch is processing: 
+  - (Training)   ppl:  7.44660, accuracy: 79.710 %, lr:  0.00033, elapse: 0.258 min
+val epoch is processing: 
+  - (Validation) ppl:  4.44267, accuracy: 68.979 %, lr:  0.00033, elapse: 0.003 min
+[ Epoch 20 ]
+train epoch is processing: 
+  - (Training)   ppl:  7.06012, accuracy: 80.949 %, lr:  0.00032, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  4.36644, accuracy: 69.834 %, lr:  0.00032, elapse: 0.003 min
+[ Epoch 21 ]
+train epoch is processing: 
+  - (Training)   ppl:  6.71337, accuracy: 82.299 %, lr:  0.00031, elapse: 0.260 min
+val epoch is processing: 
+  - (Validation) ppl:  4.40326, accuracy: 70.105 %, lr:  0.00031, elapse: 0.003 min
+[ Epoch 22 ]
+train epoch is processing: 
+  - (Training)   ppl:  6.36316, accuracy: 83.776 %, lr:  0.00031, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  4.36776, accuracy: 69.788 %, lr:  0.00031, elapse: 0.003 min
+[ Epoch 23 ]
+train epoch is processing: 
+  - (Training)   ppl:  6.09054, accuracy: 84.973 %, lr:  0.00030, elapse: 0.260 min
+val epoch is processing: 
+  - (Validation) ppl:  4.34979, accuracy: 70.249 %, lr:  0.00030, elapse: 0.003 min
+[ Epoch 24 ]
+train epoch is processing: 
+  - (Training)   ppl:  5.86825, accuracy: 86.027 %, lr:  0.00029, elapse: 0.261 min
+val epoch is processing: 
+  - (Validation) ppl:  4.08744, accuracy: 70.295 %, lr:  0.00029, elapse: 0.003 min
+[ Epoch 25 ]
+train epoch is processing: 
+  - (Training)   ppl:  5.71632, accuracy: 86.799 %, lr:  0.00029, elapse: 0.260 min
+val epoch is processing: 
+  - (Validation) ppl:  4.23573, accuracy: 71.002 %, lr:  0.00029, elapse: 0.003 min
+[ Epoch 26 ]
+train epoch is processing: 
+  - (Training)   ppl:  5.48677, accuracy: 88.083 %, lr:  0.00028, elapse: 0.263 min
+val epoch is processing: 
+  - (Validation) ppl:  4.14093, accuracy: 71.970 %, lr:  0.00028, elapse: 0.003 min
+[ Epoch 27 ]
+train epoch is processing: 
+  - (Training)   ppl:  5.30252, accuracy: 89.158 %, lr:  0.00028, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  4.52113, accuracy: 69.868 %, lr:  0.00028, elapse: 0.003 min
+[ Epoch 28 ]
+train epoch is processing: 
+  - (Training)   ppl:  5.15772, accuracy: 90.092 %, lr:  0.00027, elapse: 0.263 min
+val epoch is processing: 
+  - (Validation) ppl:  4.58428, accuracy: 70.905 %, lr:  0.00027, elapse: 0.003 min
+[ Epoch 29 ]
+train epoch is processing: 
+  - (Training)   ppl:  5.03473, accuracy: 90.881 %, lr:  0.00027, elapse: 0.261 min
+val epoch is processing: 
+  - (Validation) ppl:  4.46649, accuracy: 71.563 %, lr:  0.00027, elapse: 0.003 min
+[ Epoch 30 ]
+train epoch is processing: 
+  - (Training)   ppl:  4.92274, accuracy: 91.629 %, lr:  0.00026, elapse: 0.258 min
+val epoch is processing: 
+  - (Validation) ppl:  4.45646, accuracy: 71.891 %, lr:  0.00026, elapse: 0.003 min
+[ Epoch 31 ]
+train epoch is processing: 
+  - (Training)   ppl:  4.82025, accuracy: 92.304 %, lr:  0.00026, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  4.48304, accuracy: 72.002 %, lr:  0.00026, elapse: 0.003 min
+[ Epoch 32 ]
+train epoch is processing: 
+  - (Training)   ppl:  4.73720, accuracy: 92.895 %, lr:  0.00026, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  4.05530, accuracy: 73.609 %, lr:  0.00026, elapse: 0.003 min
+[ Epoch 33 ]
+train epoch is processing: 
+  - (Training)   ppl:  4.66082, accuracy: 93.411 %, lr:  0.00025, elapse: 0.258 min
+val epoch is processing: 
+  - (Validation) ppl:  4.52414, accuracy: 72.219 %, lr:  0.00025, elapse: 0.003 min
+[ Epoch 34 ]
+train epoch is processing: 
+  - (Training)   ppl:  4.57262, accuracy: 94.089 %, lr:  0.00025, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  4.47834, accuracy: 72.644 %, lr:  0.00025, elapse: 0.003 min
+[ Epoch 35 ]
+train epoch is processing: 
+  - (Training)   ppl:  4.51774, accuracy: 94.406 %, lr:  0.00024, elapse: 0.262 min
+val epoch is processing: 
+  - (Validation) ppl:  4.52304, accuracy: 72.926 %, lr:  0.00024, elapse: 0.003 min
+[ Epoch 36 ]
+train epoch is processing: 
+  - (Training)   ppl:  4.46641, accuracy: 94.853 %, lr:  0.00024, elapse: 0.258 min
+val epoch is processing: 
+  - (Validation) ppl:  4.71043, accuracy: 72.650 %, lr:  0.00024, elapse: 0.003 min
+[ Epoch 37 ]
+train epoch is processing: 
+  - (Training)   ppl:  4.40422, accuracy: 95.254 %, lr:  0.00024, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  4.81691, accuracy: 72.125 %, lr:  0.00024, elapse: 0.003 min
+[ Epoch 38 ]
+train epoch is processing: 
+  - (Training)   ppl:  4.35431, accuracy: 95.638 %, lr:  0.00024, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  4.67284, accuracy: 72.448 %, lr:  0.00024, elapse: 0.003 min
+[ Epoch 39 ]
+train epoch is processing: 
+  - (Training)   ppl:  4.32180, accuracy: 95.860 %, lr:  0.00023, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  4.89700, accuracy: 72.508 %, lr:  0.00023, elapse: 0.003 min
+[ Epoch 40 ]
+train epoch is processing: 
+  - (Training)   ppl:  4.27219, accuracy: 96.211 %, lr:  0.00023, elapse: 0.260 min
+val epoch is processing: 
+  - (Validation) ppl:  4.31956, accuracy: 74.405 %, lr:  0.00023, elapse: 0.003 min
+[ Epoch 41 ]
+train epoch is processing: 
+  - (Training)   ppl:  4.23072, accuracy: 96.530 %, lr:  0.00023, elapse: 0.261 min
+val epoch is processing: 
+  - (Validation) ppl:  4.80089, accuracy: 73.085 %, lr:  0.00023, elapse: 0.003 min
+[ Epoch 42 ]
+train epoch is processing: 
+  - (Training)   ppl:  4.20129, accuracy: 96.741 %, lr:  0.00022, elapse: 0.264 min
+val epoch is processing: 
+  - (Validation) ppl:  4.78966, accuracy: 73.026 %, lr:  0.00022, elapse: 0.003 min
+[ Epoch 43 ]
+train epoch is processing: 
+  - (Training)   ppl:  4.16739, accuracy: 96.915 %, lr:  0.00022, elapse: 0.267 min
+val epoch is processing: 
+  - (Validation) ppl:  4.83054, accuracy: 73.214 %, lr:  0.00022, elapse: 0.003 min
+[ Epoch 44 ]
+train epoch is processing: 
+  - (Training)   ppl:  4.14189, accuracy: 97.149 %, lr:  0.00022, elapse: 0.258 min
+val epoch is processing: 
+  - (Validation) ppl:  4.97616, accuracy: 72.486 %, lr:  0.00022, elapse: 0.003 min
+[ Epoch 45 ]
+train epoch is processing: 
+  - (Training)   ppl:  4.11185, accuracy: 97.358 %, lr:  0.00022, elapse: 0.265 min
+val epoch is processing: 
+  - (Validation) ppl:  5.04285, accuracy: 72.764 %, lr:  0.00022, elapse: 0.003 min
+[ Epoch 46 ]
+train epoch is processing: 
+  - (Training)   ppl:  4.08626, accuracy: 97.497 %, lr:  0.00021, elapse: 0.260 min
+val epoch is processing: 
+  - (Validation) ppl:  5.10383, accuracy: 72.456 %, lr:  0.00021, elapse: 0.003 min
+[ Epoch 47 ]
+train epoch is processing: 
+  - (Training)   ppl:  4.06437, accuracy: 97.616 %, lr:  0.00021, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  5.19939, accuracy: 72.284 %, lr:  0.00021, elapse: 0.003 min
+[ Epoch 48 ]
+train epoch is processing: 
+  - (Training)   ppl:  4.04529, accuracy: 97.739 %, lr:  0.00021, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  4.49871, accuracy: 74.387 %, lr:  0.00021, elapse: 0.003 min
+[ Epoch 49 ]
+train epoch is processing: 
+  - (Training)   ppl:  4.02980, accuracy: 97.839 %, lr:  0.00021, elapse: 0.258 min
+val epoch is processing: 
+  - (Validation) ppl:  5.01472, accuracy: 73.184 %, lr:  0.00021, elapse: 0.003 min
+[ Epoch 50 ]
+train epoch is processing: 
+  - (Training)   ppl:  4.00846, accuracy: 97.953 %, lr:  0.00021, elapse: 0.258 min
+val epoch is processing: 
+  - (Validation) ppl:  5.13507, accuracy: 72.910 %, lr:  0.00021, elapse: 0.003 min
+[ Epoch 51 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.98967, accuracy: 98.091 %, lr:  0.00020, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  5.09908, accuracy: 72.856 %, lr:  0.00020, elapse: 0.003 min
+[ Epoch 52 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.96943, accuracy: 98.227 %, lr:  0.00020, elapse: 0.261 min
+val epoch is processing: 
+  - (Validation) ppl:  5.18260, accuracy: 72.901 %, lr:  0.00020, elapse: 0.003 min
+[ Epoch 53 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.95516, accuracy: 98.290 %, lr:  0.00020, elapse: 0.258 min
+val epoch is processing: 
+  - (Validation) ppl:  5.49011, accuracy: 72.526 %, lr:  0.00020, elapse: 0.003 min
+[ Epoch 54 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.93578, accuracy: 98.415 %, lr:  0.00020, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  5.23390, accuracy: 72.904 %, lr:  0.00020, elapse: 0.003 min
+[ Epoch 55 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.92749, accuracy: 98.447 %, lr:  0.00020, elapse: 0.257 min
+val epoch is processing: 
+  - (Validation) ppl:  5.27319, accuracy: 72.691 %, lr:  0.00020, elapse: 0.003 min
+[ Epoch 56 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.91748, accuracy: 98.493 %, lr:  0.00019, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  4.50936, accuracy: 75.322 %, lr:  0.00019, elapse: 0.003 min
+[ Epoch 57 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.90191, accuracy: 98.603 %, lr:  0.00019, elapse: 0.258 min
+val epoch is processing: 
+  - (Validation) ppl:  5.10949, accuracy: 73.598 %, lr:  0.00019, elapse: 0.003 min
+[ Epoch 58 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.89278, accuracy: 98.637 %, lr:  0.00019, elapse: 0.258 min
+val epoch is processing: 
+  - (Validation) ppl:  5.22285, accuracy: 73.221 %, lr:  0.00019, elapse: 0.003 min
+[ Epoch 59 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.88006, accuracy: 98.712 %, lr:  0.00019, elapse: 0.258 min
+val epoch is processing: 
+  - (Validation) ppl:  5.24868, accuracy: 73.205 %, lr:  0.00019, elapse: 0.003 min
+[ Epoch 60 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.87074, accuracy: 98.749 %, lr:  0.00019, elapse: 0.258 min
+val epoch is processing: 
+  - (Validation) ppl:  5.24662, accuracy: 73.151 %, lr:  0.00019, elapse: 0.003 min
+[ Epoch 61 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.86158, accuracy: 98.800 %, lr:  0.00019, elapse: 0.261 min
+val epoch is processing: 
+  - (Validation) ppl:  5.43184, accuracy: 73.003 %, lr:  0.00019, elapse: 0.003 min
+[ Epoch 62 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.85549, accuracy: 98.829 %, lr:  0.00019, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  5.35865, accuracy: 72.895 %, lr:  0.00019, elapse: 0.003 min
+[ Epoch 63 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.84526, accuracy: 98.873 %, lr:  0.00018, elapse: 0.258 min
+val epoch is processing: 
+  - (Validation) ppl:  5.35188, accuracy: 72.924 %, lr:  0.00018, elapse: 0.003 min
+[ Epoch 64 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.83873, accuracy: 98.892 %, lr:  0.00018, elapse: 0.258 min
+val epoch is processing: 
+  - (Validation) ppl:  4.65725, accuracy: 75.433 %, lr:  0.00018, elapse: 0.003 min
+[ Epoch 65 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.83024, accuracy: 98.959 %, lr:  0.00018, elapse: 0.258 min
+val epoch is processing: 
+  - (Validation) ppl:  5.27101, accuracy: 73.598 %, lr:  0.00018, elapse: 0.003 min
+[ Epoch 66 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.82041, accuracy: 98.989 %, lr:  0.00018, elapse: 0.260 min
+val epoch is processing: 
+  - (Validation) ppl:  5.38403, accuracy: 73.744 %, lr:  0.00018, elapse: 0.003 min
+[ Epoch 67 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.81435, accuracy: 99.022 %, lr:  0.00018, elapse: 0.262 min
+val epoch is processing: 
+  - (Validation) ppl:  5.43066, accuracy: 73.257 %, lr:  0.00018, elapse: 0.003 min
+[ Epoch 68 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.80551, accuracy: 99.069 %, lr:  0.00018, elapse: 0.260 min
+val epoch is processing: 
+  - (Validation) ppl:  5.61828, accuracy: 73.030 %, lr:  0.00018, elapse: 0.003 min
+[ Epoch 69 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.79923, accuracy: 99.101 %, lr:  0.00018, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  5.68240, accuracy: 72.892 %, lr:  0.00018, elapse: 0.003 min
+[ Epoch 70 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.79300, accuracy: 99.107 %, lr:  0.00017, elapse: 0.265 min
+val epoch is processing: 
+  - (Validation) ppl:  5.71361, accuracy: 73.157 %, lr:  0.00017, elapse: 0.003 min
+[ Epoch 71 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.79153, accuracy: 99.115 %, lr:  0.00017, elapse: 0.257 min
+val epoch is processing: 
+  - (Validation) ppl:  5.66065, accuracy: 73.081 %, lr:  0.00017, elapse: 0.003 min
+[ Epoch 72 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.78319, accuracy: 99.159 %, lr:  0.00017, elapse: 0.261 min
+val epoch is processing: 
+  - (Validation) ppl:  4.84221, accuracy: 75.220 %, lr:  0.00017, elapse: 0.003 min
+[ Epoch 73 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.77835, accuracy: 99.163 %, lr:  0.00017, elapse: 0.258 min
+val epoch is processing: 
+  - (Validation) ppl:  5.58345, accuracy: 73.616 %, lr:  0.00017, elapse: 0.003 min
+[ Epoch 74 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.77271, accuracy: 99.198 %, lr:  0.00017, elapse: 0.258 min
+val epoch is processing: 
+  - (Validation) ppl:  5.63951, accuracy: 73.505 %, lr:  0.00017, elapse: 0.003 min
+[ Epoch 75 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.76740, accuracy: 99.210 %, lr:  0.00017, elapse: 0.258 min
+val epoch is processing: 
+  - (Validation) ppl:  5.59213, accuracy: 73.257 %, lr:  0.00017, elapse: 0.003 min
+[ Epoch 76 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.75995, accuracy: 99.247 %, lr:  0.00017, elapse: 0.260 min
+val epoch is processing: 
+  - (Validation) ppl:  5.69378, accuracy: 73.367 %, lr:  0.00017, elapse: 0.003 min
+[ Epoch 77 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.75714, accuracy: 99.261 %, lr:  0.00017, elapse: 0.261 min
+val epoch is processing: 
+  - (Validation) ppl:  5.85597, accuracy: 72.509 %, lr:  0.00017, elapse: 0.003 min
+[ Epoch 78 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.75258, accuracy: 99.277 %, lr:  0.00017, elapse: 0.262 min
+val epoch is processing: 
+  - (Validation) ppl:  5.70292, accuracy: 73.047 %, lr:  0.00017, elapse: 0.003 min
+[ Epoch 79 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.74494, accuracy: 99.323 %, lr:  0.00016, elapse: 0.263 min
+val epoch is processing: 
+  - (Validation) ppl:  5.72423, accuracy: 73.131 %, lr:  0.00016, elapse: 0.003 min
+[ Epoch 80 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.74332, accuracy: 99.312 %, lr:  0.00016, elapse: 0.258 min
+val epoch is processing: 
+  - (Validation) ppl:  4.92158, accuracy: 75.192 %, lr:  0.00016, elapse: 0.003 min
+[ Epoch 81 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.74141, accuracy: 99.315 %, lr:  0.00016, elapse: 0.258 min
+val epoch is processing: 
+  - (Validation) ppl:  5.49014, accuracy: 73.625 %, lr:  0.00016, elapse: 0.003 min
+[ Epoch 82 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.73607, accuracy: 99.348 %, lr:  0.00016, elapse: 0.257 min
+val epoch is processing: 
+  - (Validation) ppl:  5.62897, accuracy: 73.585 %, lr:  0.00016, elapse: 0.003 min
+[ Epoch 83 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.73320, accuracy: 99.338 %, lr:  0.00016, elapse: 0.261 min
+val epoch is processing: 
+  - (Validation) ppl:  5.59742, accuracy: 73.754 %, lr:  0.00016, elapse: 0.003 min
+[ Epoch 84 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.72794, accuracy: 99.376 %, lr:  0.00016, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  5.77138, accuracy: 73.315 %, lr:  0.00016, elapse: 0.003 min
+[ Epoch 85 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.72215, accuracy: 99.400 %, lr:  0.00016, elapse: 0.261 min
+val epoch is processing: 
+  - (Validation) ppl:  5.82074, accuracy: 73.387 %, lr:  0.00016, elapse: 0.003 min
+[ Epoch 86 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.72157, accuracy: 99.397 %, lr:  0.00016, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  5.72274, accuracy: 73.140 %, lr:  0.00016, elapse: 0.003 min
+[ Epoch 87 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.71839, accuracy: 99.405 %, lr:  0.00016, elapse: 0.258 min
+val epoch is processing: 
+  - (Validation) ppl:  5.75172, accuracy: 73.164 %, lr:  0.00016, elapse: 0.003 min
+[ Epoch 88 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.71550, accuracy: 99.396 %, lr:  0.00016, elapse: 0.261 min
+val epoch is processing: 
+  - (Validation) ppl:  4.98799, accuracy: 75.312 %, lr:  0.00016, elapse: 0.003 min
+[ Epoch 89 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.71151, accuracy: 99.431 %, lr:  0.00015, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  5.56730, accuracy: 73.454 %, lr:  0.00015, elapse: 0.003 min
+[ Epoch 90 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.70918, accuracy: 99.438 %, lr:  0.00015, elapse: 0.264 min
+val epoch is processing: 
+  - (Validation) ppl:  5.63650, accuracy: 73.931 %, lr:  0.00015, elapse: 0.003 min
+[ Epoch 91 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.70685, accuracy: 99.453 %, lr:  0.00015, elapse: 0.266 min
+val epoch is processing: 
+  - (Validation) ppl:  5.68645, accuracy: 73.571 %, lr:  0.00015, elapse: 0.003 min
+[ Epoch 92 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.70487, accuracy: 99.436 %, lr:  0.00015, elapse: 0.267 min
+val epoch is processing: 
+  - (Validation) ppl:  5.79518, accuracy: 72.996 %, lr:  0.00015, elapse: 0.003 min
+[ Epoch 93 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.70155, accuracy: 99.461 %, lr:  0.00015, elapse: 0.264 min
+val epoch is processing: 
+  - (Validation) ppl:  6.13103, accuracy: 72.773 %, lr:  0.00015, elapse: 0.003 min
+[ Epoch 94 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.69730, accuracy: 99.498 %, lr:  0.00015, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  5.85428, accuracy: 73.309 %, lr:  0.00015, elapse: 0.003 min
+[ Epoch 95 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.69586, accuracy: 99.477 %, lr:  0.00015, elapse: 0.260 min
+val epoch is processing: 
+  - (Validation) ppl:  5.80582, accuracy: 73.181 %, lr:  0.00015, elapse: 0.003 min
+[ Epoch 96 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.69320, accuracy: 99.481 %, lr:  0.00015, elapse: 0.265 min
+val epoch is processing: 
+  - (Validation) ppl:  5.10963, accuracy: 75.368 %, lr:  0.00015, elapse: 0.003 min
+[ Epoch 97 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.68851, accuracy: 99.510 %, lr:  0.00015, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  5.72313, accuracy: 73.499 %, lr:  0.00015, elapse: 0.003 min
+[ Epoch 98 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.68739, accuracy: 99.507 %, lr:  0.00015, elapse: 0.259 min
+val epoch is processing: 
+  - (Validation) ppl:  5.71779, accuracy: 73.869 %, lr:  0.00015, elapse: 0.003 min
+[ Epoch 99 ]
+train epoch is processing: 
+  - (Training)   ppl:  3.68350, accuracy: 99.533 %, lr:  0.00015, elapse: 0.258 min
+val epoch is processing: 
+  - (Validation) ppl:  5.79895, accuracy: 73.432 %, lr:  0.00015, elapse: 0.003 min
+[Info] Trained model state loaded.
+BLEU:  0.30348296533841557

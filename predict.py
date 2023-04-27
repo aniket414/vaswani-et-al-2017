@@ -39,7 +39,7 @@ def translate(model_path, args):
     pred_seq = model.translate_sentence(torch.LongTensor([src_seq]).to(DEVICE))
     pred_line = ' '.join(trg_itos[idx] for idx in pred_seq)
     pred_line = pred_line.replace(BOS_WORD, '').replace(EOS_WORD, '')
-    print("German output: ", "[", len(pred_seq), "]", pred_line)
+    print("German output: ", "[", len(pred_line), "]", pred_line)
 
 def main():
     parser = argparse.ArgumentParser(description='Machine Translation')
