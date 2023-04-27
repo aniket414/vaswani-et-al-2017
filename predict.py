@@ -3,9 +3,9 @@ import torch
 import torch.nn as nn
 from transformer.transformer import Transformer
 from dataloader.constants import BOS_WORD, EOS_WORD
-from dataloader.wmt16_dataset import prepare_dataloaders
+from dataloader.wmt16_dataset import prepare_dataloaders, tokenize_en
 
-DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
+DEVICE = 'cpu'
 
 def translate(model_path, args):
     checkpoint = torch.load(model_path, map_location=DEVICE)
@@ -33,17 +33,17 @@ def translate(model_path, args):
     model.load_state_dict(checkpoint['model'])
     model.eval()
     print('[Info] Trained model state loaded.')
-    print("German input: ", "[", len(args.inp), "]", args.inp)
+    print("English input: ", "[", len(args.inp), "]", args.inp)
+    args.inp = tokenize_en(args.inp)
     src_seq = [src_stoi.get(word, unk_idx) for word in args.inp]
     pred_seq = model.translate_sentence(torch.LongTensor([src_seq]).to(DEVICE))
     pred_line = ' '.join(trg_itos[idx] for idx in pred_seq)
     pred_line = pred_line.replace(BOS_WORD, '').replace(EOS_WORD, '')
-    # print("English output: ", "[", len(pred_seq), "]", pred_seq)
-    print("English output: ", "[", len(pred_seq), "]", pred_line)
+    print("German output: ", "[", len(pred_seq), "]", pred_line)
 
 def main():
     parser = argparse.ArgumentParser(description='Machine Translation')
-    parser.add_argument('--inp', type=str, default='Ich bin ein Student der Deep-Learning-Klasse', help="YOUR_INPUT")
+    parser.add_argument('--inp', type=str, default='a girl on a seashore with a mountain in the background.', help="YOUR_INPUT")
     args = parser.parse_args()
     translate(model_path="./output/model.chkpt", args=args)
 

@@ -8,13 +8,14 @@ import random
 
 from dataloader.constants import PAD_WORD, UNK_WORD, BOS_WORD, EOS_WORD
 
-__all__ = ["prepare_dataloaders"]
+__all__ = ["prepare_dataloaders", "tokenize_en"]
 
-src_lang_model = spacy.load('de_core_news_sm')
-trg_lang_model = spacy.load('en_core_web_sm')
+
+src_lang_model = spacy.load('en_core_web_sm')
+trg_lang_model = spacy.load('de_core_news_sm')
 
 def prepare_dataloaders(max_len, min_freq, batch_size, device):
-    train, val, test = torchtext.datasets.Multi30k(root='.wmt16_data', split=('train', 'valid', 'test'), language_pair=('de', 'en'))
+    train, val, test = torchtext.datasets.Multi30k(root='.wmt16_data', split=('train', 'valid', 'test'), language_pair=('en', 'de'))
     
     # tokenlizer
     train_datasets = TextDatasets(train)
@@ -160,11 +161,11 @@ def preprocessing_text(text):
     # text = re.sub(f'[{string.punctuation}\n]', '', text)
     return text
 
-def tokenize_de(text):
+def tokenize_en(text):
     text = preprocessing_text(text)
     return [tok.text for tok in src_lang_model.tokenizer(text)]
 
-def tokenize_en(text):
+def tokenize_de(text):
     text = preprocessing_text(text)
     return [tok.text for tok in trg_lang_model.tokenizer(text)]
                       
@@ -177,6 +178,6 @@ class TextDatasets(torch.utils.data.Dataset):
     
     def __getitem__(self, idx):
         src, trg = self.datasets[idx]
-        src = [BOS_WORD] + tokenize_de(src) + [EOS_WORD]
-        trg = [BOS_WORD] + tokenize_en(trg) + [EOS_WORD]
+        src = [BOS_WORD] + tokenize_en(src) + [EOS_WORD]
+        trg = [BOS_WORD] + tokenize_de(trg) + [EOS_WORD]
         return src, trg

@@ -11,19 +11,19 @@ from torch.utils.tensorboard import SummaryWriter
 import torch.nn.functional as F
 from transformer.transformer import Transformer
 from transformer.optim import ScheduledOptim
-from dataloader.wmt16_dataset import prepare_dataloaders
+from dataloader.wmt16_dataset import prepare_dataloaders, tokenize_en
 
 
 class TrainerTransformer:
     def __init__(self, args):
         self.batch_size = args.batch_size  # 128
         self.word_max_len = 300  ## word_max_len must be larger than output_size/input_size
-        self.d_model = args.emb_size # 512
+        self.d_model = args.emb_size  # 512
         self.d_ff_hid = 512 * 4
-        self.num_heads = args.num_heads # 8
+        self.num_heads = args.num_heads  # 8
         self.d_k_embd = self.d_model // self.num_heads
         self.layers = 6
-        self.dropout = args.dropout # 0.1
+        self.dropout = args.dropout  # 0.1
         self.epoch = args.epoch
         self.lr_mul = 0.5  # 2.0
         self.n_warmup_steps = 4000  # 128000
@@ -32,7 +32,7 @@ class TrainerTransformer:
         self.tb_writer = SummaryWriter(log_dir=os.path.join(self.output_dir, 'tensorboard'))
         self.label_smoothing = True
         self.max_len = 100
-        self.min_freq = args.n_layers # 3
+        self.min_freq = args.n_layers  # 3
         self.is_pos_embd = False
 
         # for translate
@@ -210,24 +210,26 @@ class TrainerTransformer:
 
     def translate(self, model_path):
         checkpoint = torch.load(model_path, map_location=self.device)
-        self.model.load_state_dict(checkpoint['model'])
+        self.model.load_state_dict(checkpoint['model'], strict=False)
         print('[Info] Trained model state loaded.')
 
         for src, trg in tqdm(self.test_dataset, mininterval=2, desc='  - (Test)', leave=False):
+            print(src)
             print("")
-            print("German input: ", "[", len(src), "]", ' '.join(src))
-            print("English gt: ", "[", len(trg), "]", ' '.join(trg))
+            print("English input: ", "[", len(src), "]", ' '.join(src))
+            print("German output: ", "[", len(trg), "]", ' '.join(trg))
             src_seq = [self.src_stoi.get(word, self.unk_idx) for word in src]
             pred_seq = self.model.translate_sentence(torch.LongTensor([src_seq]).to(self.device))
             pred_line = ' '.join(self.trg_itos[idx] for idx in pred_seq)
             pred_line = pred_line.replace(self.BOS_WORD, '').replace(self.EOS_WORD, '')
-            print("English pred: ", "[", len(pred_seq), "]", pred_seq)
-            print("English pred: ", "[", len(pred_seq), "]", pred_line)
+            print("German output: ", "[", len(pred_seq), "]", pred_seq)
+            print("German output: ", "[", len(pred_seq), "]", pred_line)
+
         print('[Info] Finished.')
 
-    def blue(self, model_path):
+    def get_bleu(self, model_path):
         checkpoint = torch.load(model_path, map_location=self.device)
-        self.model.load_state_dict(checkpoint['model'])
+        self.model.load_state_dict(checkpoint['model'], strict=False)
         print('[Info] Trained model state loaded.')
         targets = []
         outputs = []
@@ -242,12 +244,22 @@ class TrainerTransformer:
             targets.append([trg])
             outputs.append(pred_line.split())
 
-            test_load.set_postfix(
-                count=count
-            )
+            test_load.set_postfix(count=count)
             count += 1
 
-        print('BLUE', bleu_score(outputs, targets))
+        print('BLEU: ', bleu_score(outputs, targets))
+
+    def translate_single(self, model_path, input="a girl on a seashore with a mountain in the background."):
+        inp = tokenize_en(input)
+        checkpoint = torch.load(model_path, map_location=self.device)
+        self.model.load_state_dict(checkpoint['model'], strict=False)
+        print('[Info] Trained model state loaded.')
+        print("English input: ", "[", len(inp), "]", ' '.join(inp))
+        src_seq = [self.src_stoi.get(word, self.unk_idx) for word in inp]
+        pred_seq = self.model.translate_sentence(torch.LongTensor([src_seq]).to(self.device))
+        pred_line = ' '.join(self.trg_itos[idx] for idx in pred_seq)
+        pred_line = pred_line.replace(self.BOS_WORD, '').replace(self.EOS_WORD, '')
+        print("German output: ", "[", len(pred_seq), "]", pred_line)
 
 
 def main():
@@ -264,7 +276,11 @@ def main():
 
     trainer = TrainerTransformer(args)
     trainer.train()
-    trainer.blue(model_path="./output/model.chkpt")
+
+    # trainer.translate_single(model_path="./output/model.chkpt")
+    # trainer.translate(model_path="./output/model.chkpt")
+
+    trainer.get_bleu(model_path="./output/model.chkpt")
 
 
 if __name__ == "__main__":
