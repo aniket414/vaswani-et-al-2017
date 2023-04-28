@@ -41,7 +41,12 @@
   ```
 - Translate English to German
   ```
-  python predict.py --inp "a girl on a seashore."
+  Default:
+  python predict.py
+  
+  Custom:
+  python predict.py [-h]
+  [--inp INP]
   ```
   
 ## Result

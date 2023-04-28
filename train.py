@@ -68,7 +68,7 @@ class TrainerTransformer:
             beam_size=self.beam_size,
             alpha=self.alpha,
             device=self.device)
-        self.model = nn.DataParallel(self.model) # for using multiple gpus
+        # self.model = nn.DataParallel(self.model) # for using multiple gpus; uncomment the line when needed.
         self.model.to(self.device)
 
         # create optimizer
