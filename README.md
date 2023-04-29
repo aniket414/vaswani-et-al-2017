@@ -60,11 +60,10 @@
 ```
 .wmt16_data/ - [Dataset]
 dataloader/ - [Data preprocessing pipeline and tokenization]
-logs/ - [Logs of Run]
+logs/ - [Logs of run]
 output/
   tensorboard/ - [Visualization toolkit files]
-  model.chkpt - [Trained model]
-report/ - [Project report]
+docs/ - [Project report and presentation]
 transformer/ - [Transformer Architecture]
   attention.py
   decoder.py
