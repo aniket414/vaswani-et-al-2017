@@ -84,7 +84,11 @@ Implement machine translation on English to Hindi
 - Hindi Tokenizer - https://www.cse.iitb.ac.in/~anoopk/pages/softwares.html
 
 ## References
-- https://pytorch.org/tutorials/beginner/translation_transformer.html
+- The byte pair encoding parts are borrowed from [subword-nmt](https://github.com/rsennrich/subword-nmt/).
+- Andrej Karpathy youtube video "[Let's build GPT: from scratch, in code, spelled out](https://www.youtube.com/watch?v=kCc8FmEb1nY)".
+- Aladdin Persson youtube video "[Pytorch Transformers](https://www.youtube.com/watch?v=U0s0f995w14)".
+- [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) by Jay Alammar.
+- PyTorch tutorial "[LANGUAGE TRANSLATION WITH NN.TRANSFORMER AND TORCHTEXT](https://pytorch.org/tutorials/beginner/translation_transformer.html)".
 
 ## Acknowledgement
 ```
