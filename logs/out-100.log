@@ -515,4 +515,4 @@ train epoch is processing:
 val epoch is processing: 
   - (Validation) ppl:  5.79895, accuracy: 73.432 %, lr:  0.00015, elapse: 0.003 min
 [Info] Trained model state loaded.
-BLEU:  0.30348296533841557
+BLEU:  0.21348296533841557
