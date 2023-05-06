@@ -80,8 +80,8 @@ train.py - [Training file]
 
 ## Future Task
 Implement machine translation on English to Hindi
-- Dataset - https://www.cfilt.iitb.ac.in/iitb_parallel/
-- Hindi Tokenizer - https://www.cse.iitb.ac.in/~anoopk/pages/softwares.html
+- Dataset - [IIT Bombay Hindi English Corpus](https://www.cfilt.iitb.ac.in/iitb_parallel/).
+- Hindi Tokenizer - [Indic NLP Library](http://anoopkunchukuttan.github.io/indic_nlp_library/).
 
 ## References
 - The byte pair encoding parts are borrowed from [subword-nmt](https://github.com/rsennrich/subword-nmt/).
