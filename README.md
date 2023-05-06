@@ -88,7 +88,7 @@ Implement machine translation on English to Hindi
 - The project structure, some scripts are partly borrowed from [jadore801120/attention-is-all-you-need-pytorch](https://github.com/jadore801120/attention-is-all-you-need-pytorch).
 - Andrej Karpathy youtube video "[Let's build GPT: from scratch, in code, spelled out](https://www.youtube.com/watch?v=kCc8FmEb1nY)".
 - Aladdin Persson youtube video "[Pytorch Transformers](https://www.youtube.com/watch?v=U0s0f995w14)".
-- [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) by Jay Alammar.
+- "[The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)" by Jay Alammar.
 - PyTorch tutorial "[LANGUAGE TRANSLATION WITH NN.TRANSFORMER AND TORCHTEXT](https://pytorch.org/tutorials/beginner/translation_transformer.html)".
 
 ## Acknowledgement
