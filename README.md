@@ -75,6 +75,39 @@ predict.py - [Translation file]
 train.py - [Training file]
 ```
 
+## Flowchart
+```mermaid
+flowchart TD
+    A[Dataset: Multi30k] -->|Load Data| B[dataloader/wmt16_dataset.py]
+    B -->|Preprocess & Tokenize| C[DataLoader]
+    C -->|Batch Data| D[train.py]
+    D -->|Train Model| E[Transformer Model]
+    E -->|Save Model| F[output/model.chkpt]
+    F -->|Load Model| G[predict.py]
+    G -->|Translate Input| H[Transformer Model]
+    H -->|Generate Output| I[German Translation]
+
+    subgraph Training
+        D -->|Forward Pass| E
+        E -->|Backward Pass| D
+        D -->|Log Metrics| J[output/tensorboard]
+    end
+
+    subgraph Prediction
+        G -->|Input Sentence| H
+        H -->|Output Sentence| I
+    end
+
+    subgraph Transformer Architecture
+        E -->|Encoder| K[transformer/encoder.py]
+        E -->|Decoder| L[transformer/decoder.py]
+        K -->|Multi-Head Attention| M[transformer/attention.py]
+        L -->|Multi-Head Attention| M
+        K -->|Positional Encoding| N[transformer/positional.py]
+        L -->|Positional Encoding| N
+    end
+```
+
 ## Visualization
 `tensorboard --logdir output`
 
